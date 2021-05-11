@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat:wght@300;500&display=swap');
+/*
+font-family: 'Goldman', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+html body{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.continer{
+	width: 800px;
+	margin: auto;
+}
+.container h1 {
+	margin-left: 50px;
+}
+
+/*Usar clase clearfix en caso de que el float cause problemas a ostras etiquetas*/
+.clearfix{
+	clear: both;
+}
+#header{
+	padding: 50px 0px 100px;
+	/*Estilos de fondo de pantalla*/
+	background-color: darkgray;
+	background-image: url(car.jpg); /*Cargar imagen de fondo*/
+	background-repeat: no-repeat;
+	background-position: center top; /*alineación HORIZONTAL VERTICAL*/
+	background-attachment: fixed; /*Perquè el fons al baixar dins de la web*/
+	background-size: cover; /*Tamaño de la imagen de fondo*/
+							/*100%, cover, contain*/
+	margin-bottom: 50px;
+	/*Forma resumida del background, ha de ser en aquest sentit*/
+	/*background: darkgray url(car.jpg) no-repeat scroll center top ;*/
+}
+
+/*Propiedades logo*/
+#header h1{
+	float: left;
+	color: white;
+}
+
+#header ul{
+	float: right;
+	list-style: none;
+	padding-left: 0px;
+	color: white;
+}
+
+#header li{
+	display: inline-block; /*Elementos li en linea*/
+	margin-right: 50px;
+	color: white;
+}
+
+#header a{
+	text-decoration: none;
+	color: white;
+}
+#header a:hover{
+	color: #50f016;
+}
+#about{
+	float: right;
+}
+#about{
+	width: 300px;
+	float: right;
+	margin-top: 100px;
+}
+#about h2{
+	text-transform: uppercase;
+	font-weight: 100;
+	color: white;
+}
+#about p{
+	font-weight: 300;
+	line-height: 2em;
+	color: white;
+}
+/*EStilo seccion estudio*/
+
+#estudio{
+	background-color: grey;
+	margin-top: 100px;
+	padding: 60px;
+	background-image: url(car2.jpg);
+
+}
+#estudio #left{
+	width: 300px;
+	float: left;
+	padding: 0px;
+}
+#left h2{
+	font-weight: 100;
+	text-transform: uppercase;
+	color: white;
+
+}
+#left p{
+	font-weight: 300;
+	line-height: 2em;
+	color: white;
+
+}
+.texto_de_relleno p{
+	margin: auto;
+	width: 1500px;
+}
+/*Estilo de CITA*/
+blockquote{
+	width: 300px;
+	padding: 30px 40px 30px 40px; /*A dalt dreta a baix esquerra (com les agulles del rellotge)*/
+	font-size: 2em;
+	font-family: 'Montserrat', sans-serif;
+	color: #545454;
+	font-style: italic;
+	margin: 0px auto 100px; /*Arriba, a los lados, a bajo*/
+}
+#footer{
+	
+	padding-top: 200px;
+	background-image: url(mclarengt3.png);
+	background-repeat: no-repeat; /*Opció per defecte no fa falta posar-ho*/
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: 40%;
+}
+.copy{
+	width: 200px;
+	float: left;
+	padding-left: 20px;
+}
+.social{
+	width: 200px;
+	float: right;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+/*Tutorial de Border*/
+.caja{
+	width: 100px;
+	height: 100px;
+	margin: 20px 10px;
+	float: left;
+
+	background-color: skyblue;
+}
+
+.caja1{
+	border: 2px solid green;
+}
+.caja2{
+	border-color: skyblue;
+	border-width: 5px;
+	border-style: dotted;
+
+	border: 5px dotted;
+
+	/*Resumen: */
+	/*Border: */
+}
+.caja3{
+	/*Estilos diferentes por cada lado*/
+	border-color: blue red green yellow;
+	border-width: 2px 5px 10px 3px;
+	border-style: solid double;
+	border-radius: 50px;
+}
+.caja4{
+	border-top: 3px pink ridge;
+	border-right: 4px lightpink double;
+	border-left: 7px hotpink dotted; 
+	border-bottom: 2px magenta dashed;
+}
+.caja5{
+	border-radius: 35px; /*Sempre fer-ho amb px*/
+	box-shadow: 0px 0px 3px gray;
+}
+#redes-sociales{
+	color: black;
+	list-style: none;
+	display: inline-block; 
+}
+
+
